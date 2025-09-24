@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Foundation Cures Personalization</title>
+  <link rel="icon" type="image/x-icon" href="static/images/icon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Foundation Cures Personalization: Improving Personalized Models' Prompt Consistency via Hidden Foundation Knowledge</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://yiyangcai.github.io/" target="_blank">Yiyang Cai</a>,</span>
+                <span class="author-block">
+                  <a href="https://jiangzhengkai.github.io/" target="_blank">Zhengkai Jiang</a></span>
+                  <span class="author-block">
+                    <a href="http://yulongbonjour.github.io/" target="_blank">Yulong Liu</a>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?hl=en&user=THm8x5AAAAAJ" target="_blank">Chunyang Jiang</a>,
+                  </span>
+                  <span class="author-block">
+                    <a href="http://wei-xue.com/" target="_blank">Wei Xue</a>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://facultyprofiles.hkust.edu.hk/profiles.php?profile=yike-guo-yikeguo" target="_blank">Yike Guo</a>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://whluo.github.io/" target="_blank">Wenhan Luo</a>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Hong Kong University of Science and Technology<br>NeurIPS 2025</span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/abs/2411.15277" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/YIYANGCAI/FreeCure" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/teaser-video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+            Current facial personalization models often lack precise control over facial attributes. This is because identity embedding can negatively affect cross-attention layers and undermine other tokens' normal function. To address this limitation, we propose FreeCure, a training-free framework that effectively resolves the issue. FreeCure can be easily integrated into diverse baselines(including those based on Stable Diffusion and FLUX) and enabling robust manipulation of various facial attributes while preserving their strong identity fidelity.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Motivation & Method-->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <div class="columns is-centered has-text-centered">
+      <h2 class="title is-3">Motivation and Method</h2>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <img src="./static/images/motivation.jpg" alt="Italian Trulli">
+          <div class="content has-text-justified">
+            <p>
+            We analyze the challenges current methods face in achieving precise control over facial features. The key issue lies in how personalization models process identity data: their cross-attention layers focus too much on identity-related tokens while undermining those corresponding to facial attributes (e.g., hairstyle, expression, see the left part). Consequently, these attributes become difficult to manipulate. However, these cross-attention layers (or adapters) are critical for preserving identity accuracy in the generated output, making them resistant to modification. Adjusting the cross-attention maps frequently leads to the loss of essential identity characteristics (see the right parts).
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <img src="./static/images/method.jpg" alt="Italian Trulli">
+          <div class="content has-text-justified">
+            <p>
+              While keeping cross-attention modules intact, we propose a novel foundation-aware self-attention (FASA), enabling attributes with high prompt consistency to replace those that are ill-aligned during personalization generation. To protect the identity unharmed, this strategy also leverages semantic segmentation models to generate the scaling masks of these attributes, therefore making such replacement happen in a highly localized and harmonious manner. Furthermore, we use a simple but effective approach called asymmetric prompt guidance (APG) to restore abstract attributes such as expression. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Motivation & Method -->
+
+<!-- result gallery -->
+<h2 class="title is-3;columns is-centered has-text-centered">Results</h2>
+
+<!-- baselines -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h3 class="subtitle has-text-centered">
+        Different Baselines (Including SDv1.5, SDXL and FLUX)
+      </h3>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/baseline1.png" alt="MY ALT TEXT"/>
+        <h4 class="subtitle has-text-centered">
+          Baselines based on Stable-Diffusion-v1.5 (FastComposer, Face-Diffuser, Face2Diffusion)
+        </h4>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/baseline2.png" alt="MY ALT TEXT"/>
+        <h4 class="subtitle has-text-centered">
+          Baselines based on Stable-Diffusion-XL (InstantID, PhotoMaker, PuLID)
+        </h4>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/baseline3.png" alt="MY ALT TEXT"/>
+        <h4 class="subtitle has-text-centered">
+          Baselines based on FLUX.1-dev (PuLID, InfiniteYou)
+       </h4>
+     </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End baseline carousel -->
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h3 class="subtitle has-text-centered">
+        Different Datasets (CelebA-HQ and self-curated data)
+      </h3>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/celeb-1.png" alt="MY ALT TEXT"/>
+        <h4 class="subtitle has-text-centered">
+          Celebrities (from CelebA-HQ)
+        </h4>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/celeb-2.png" alt="MY ALT TEXT"/>
+        <h4 class="subtitle has-text-centered">
+          Celebrities (from CelebA-HQ)
+        </h4>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/non-celeb-1.png" alt="MY ALT TEXT"/>
+        <h4 class="subtitle has-text-centered">
+          Non-celebrities (self-curated data)
+        </h4>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/non-celeb-2.png" alt="MY ALT TEXT"/>
+        <h4 class="subtitle has-text-centered">
+          Non-celebrities (self-curated data)
+        </h4>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h3 class="subtitle has-text-centered">
+        Different Facial Attributes (e.g. hair style, expression, accessories, eye color)
+      </h3>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/attr1.png" alt="MY ALT TEXT"/>
+        <h4 class="subtitle has-text-centered">
+          1. Hair styles
+        </h4>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/attr2.png" alt="MY ALT TEXT"/>
+        <h4 class="subtitle has-text-centered">
+          2. Accessories
+        </h4>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/attr3.png" alt="MY ALT TEXT"/>
+        <h4 class="subtitle has-text-centered">
+         3. Expressions
+       </h4>
+     </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/combination.png" alt="MY ALT TEXT"/>
+        <h4 class="subtitle has-text-centered">
+         4. Combination of multiple attributes.
+       </h4>
+     </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+
+<!-- End image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <div class="columns is-centered has-text-centered">
+      <h2 class="title is-3">Analysis</h2>
+      </div>
+      <h3 class="subtitle has-text-centered">
+        1. Multiple-attribute Prompt Consistency
+      </h3>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <img src="./static/images/analysis-0.png" alt="Italian Trulli">
+          <div class="content has-text-justified">
+            <p>
+              We validate that the subsequent enhancement processes of FreeCure do not impact attributes that have already been enhanced. The figure visualizes the intermediate results at FreeCure's different stages. When APG is used in the latter stages, attributes previously enhanced through FASA remain unaffected. This illustrates that FreeCure's improvement across multiple attributes is highly robust and consistent.
+            </p>
+          </div>
+        </div>
+      </div>
+      <h3 class="subtitle has-text-centered">
+        2. Different Initial Noise
+      </h3>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <img src="./static/images/analysis-1.png" alt="Italian Trulli">
+          <div class="content has-text-justified">
+            <p>
+              We observe that, with identical initial noise, all baselines' FD and PD processes generate faces with similar attribute locations. It is important to validate that FASA's robust performance without these condition. Thus, we relax this condition and regenerate faces with different initial noises. This figure shows that results under the two settings are comparable, which confirms that FASA can effectively enhance the generated results of PD, even when its FD counterpart produces faces with variable spatial structures.
+            </p>
+          </div>
+        </div>
+      </div>
+      <h3 class="subtitle has-text-centered">
+        3. Visualization of FASA Modules
+      </h3>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <img src="./static/images/analysis-2.png" alt="Italian Trulli">
+          <div class="content has-text-justified">
+            <p>
+              FASA effectively captures and faithfully transfers information of attributes localized in small areas (e.g. eyes, pearl earrings). Furthermore, in regions unrelated to the target attributes, FASA maintains a strong alignment with the original PD attention maps, demonstrating that it preserves the core functionality of the personalization models.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
